@@ -1,5 +1,5 @@
-//Blogger = Ember.Application.create(
-//{
-//	LOG_TRANSITION:true
-//}
-//);
+Blogger = Ember.Application.create(
+{
+	LOG_TRANSITION:true
+}
+);
