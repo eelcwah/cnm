@@ -12,11 +12,16 @@
   <script src="libs/ember-handlebars-loader-0.0.1.js"></script>
 
   <script src="blogger.js"></script> 
+<script src="router.js"></script>
+
   <script src="controllers/about.js"</script> 
   <script src="controllers/contact.js"</script> 
-  <script src="router.js"></script>
+
+ <script src="store.js"></script>
+<script src="routes/posts.js"></script>
+<script src="routes/recent-comments.js"></script>
 <script>
-  	EmberHandlebarsLoader.loadTemplates(['posts','about','contact','phone','email','application']);
+  	EmberHandlebarsLoader.loadTemplates(['posts','recent-comments','about','contact','phone','email','application']);
   </script>	
 </head>
 

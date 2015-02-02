@@ -1,6 +1,7 @@
 <h1>Lance's Blog</h1>
 <ul>
-	<li>dog</li>
-	<li>monkey</li>
+	{{#each post in model}}
+	<li>{{post.title}}</li>
+	{{/each}}
 </ul>
 

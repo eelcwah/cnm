@@ -1,4 +1,4 @@
-Blogger.PostsRoute=Ember.Route.extexd({
+Blogger.PostsRoute = Ember.Route.extend({
 	controllerName: 'posts',
 	renderTemplate: function(){
            this.render('posts');	

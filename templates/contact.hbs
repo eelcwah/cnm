@@ -7,12 +7,10 @@
 		<li>{{#link-to 'email'}}Email{{/link-to}}</li>
 		</ul>
    
-     {{#if messageSent}}
-     <p>Thank you. Your message have been sent</p><p>your confirmaton no is {{confirmationNo}}</p>
-    {{else}}
     <p> or,<a href="#" {{action 'showSecret'}}>click here</a> to send</p>
-		{{/if}}
-    </div>
+    
+
+</div>
 		<div class="col-md-6">
 		{{outlet}}
 		</div>
