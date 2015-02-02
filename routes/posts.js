@@ -1,9 +1,3 @@
-Blogger.RecentCommentsRoute = Ember.Route.extend({
-	model: function (){
-	 return comments;
-	}
-});
-
 Blogger.PostsRoute = Ember.Route.extend({
         controllerName: 'posts',
         renderTemplate: function(){
@@ -14,10 +8,4 @@ Blogger.PostsRoute = Ember.Route.extend({
         }
 });
 
-
-Blogger.PostRoute = Ember.Route.extend({
-	model: function(params) {
-	return posts.findby('id',params.post_id);
-	}
-});
 
