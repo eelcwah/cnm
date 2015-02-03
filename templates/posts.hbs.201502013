@@ -1,6 +1,6 @@
 <h1>Lance's Blog</h1>
 <ul>
-	{{#each post in controller}}
+	{{#each post in model}}
 	<li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
 	{{/each}}
 </ul>

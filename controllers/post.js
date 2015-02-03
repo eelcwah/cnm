@@ -1,6 +1,13 @@
-Blogger.PostRoute = Ember.Route.extend({
-	model: function(params){
-	   return posts.findBy('id', params.post_id);
+Blogger.PostController = Ember.ObjectController.extend({
+	isEditing: false,
+	actions: {
+		edit: function(){
+			alert('hit');
+			this.set('isEditing',true);
+		},
+		save: function(){
+			this.set('isEditing',false);
+		}
 	}
 
 });
