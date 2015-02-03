@@ -11,8 +11,11 @@ Blogger.Router.map(function(){
 	this.resource('phone');
 	this.resource('email');
 	});
-	this.resource('recent-comments');
-	this.resource('post',{path: 'posts/:post_id'});
+	this.resource('recentcomments');
+	this.resource('post',{path: 'posts/:post_id'},function(){
+		this.resource('new-comment');
+	});
+	this.resource('new-post');
 });
 
 
